@@ -1,0 +1,78 @@
+//处理移动端1px的问题
+border-1px($color)
+  position relative
+  &:after
+    display:block
+    position:absolute
+    left: 0
+    bottom:0
+    width:100%
+    border-top:1px solid $color
+    content:' '
+
+    //上下都需要线
+border2-1px($color)
+  position relative
+  &:before
+    display:block
+    left: 0
+    bottom:0
+    width:100%
+    border-bottom:1px solid $color
+    content:' '
+  &:after
+    display:block
+    position:absolute
+    left: 0
+    bottom:0
+    width:100%
+    border-top:1px solid $color
+    content:' '
+//下边框线
+border3-1px($color)
+  position relative
+  &:before
+    display:block
+    left: 0
+    bottom:0
+    width:100%
+    border-bottom:1px solid $color
+    content:' '
+  &:after
+    display:block
+    position:absolute
+    left: 0
+    bottom:0
+    width:100%
+    border-top:1px solid $color
+    content:' '
+border-none()
+  &:after
+    display: none
+
+bg-image($url)
+  background-image:url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url($url + "@3x.png")
+
+    //图片设置
+.image-com
+  -webkit-background-size: 100%
+  background-size: 100%
+  background-repeat:no-repeat
+
+.mint-spinner-fading-circle
+  margin:auto !important
+
+//轮播图小圆点
+.mint-swipe-indicator
+  width: 8px
+  height: 8px
+  opacity: 1 !important
+  display: inline-block
+  border-radius: 100%
+  background: #fff !important
+  margin: 0 3px
+  border: 1px solid #5E71EA !important
+.mint-swipe-indicator.is-active
+  background: #5E71EA !important

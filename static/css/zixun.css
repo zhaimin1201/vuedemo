@@ -1,0 +1,540 @@
+li{
+  list-style: none;
+}
+.yl-dis{
+  display: inline-block;
+}
+.yl-clear{
+  clear: both;
+}
+.bj-coment{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: auto;
+}
+.card-bj{
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+.yl-bar{
+  background: rgba(51,153,102) !important;
+}
+.yl-title{
+  color: white !important;
+  font-weight: bold;
+}
+.yl-title>span{
+  margin-left: 58px;
+}
+.yl-back{
+  color: white !important;
+}
+.yl-back>font{
+  font-size: 15px;
+}
+.yl-xiazai{
+  border: 1px solid;
+  width: 78px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  float: right;
+  color: #f77946;
+  border-radius: 18px;
+  margin-top: 7px;
+}
+.yl-media{
+  max-width: 48px !important;
+  height: 48px !important;
+}
+.yl-table{
+  padding: 10px 11px !important;
+}
+.yl-master{
+  width: 100%;
+  display: inline-block;
+  padding: 12px 11px;
+}
+.yl-lianxi{
+  display: inline-block;
+  /*padding: 14px 7px;*/
+  float: right;
+}
+.yl-maseter-name{
+  float: left;
+}
+.yl-maseter-name>img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  background: rgb(201,201,201);
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.yl-maseter-xname{
+  float: left;
+  padding-top: 5px;
+  height: 60px;
+  margin-left: 11px;
+  line-height: 27px;
+}
+.yg-name{
+  font-size: 14px;
+  font-weight: bold;
+}
+.yl-weixin{
+  border: 1px solid;
+  display: none;
+  width: 78px;
+  height: 28px;
+  text-align: center;
+  line-height: 29px;
+  border-radius: 15px;
+  color: #f77946;
+}
+.yl-weinxin2{
+  margin-top: 6px;
+}
+.yg-zw{
+  color: #8e8a8a;
+  font-weight: bold;
+}
+.yl-gname{
+  padding: 0px 22px;
+  line-height: 42px;
+}
+.wx-card{
+  position: fixed;
+  z-index: 100;
+}
+/*body{
+	overflow: hidden;
+}*/
+#backdrop{
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.3);
+}
+#backdrop>img{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#yc{
+  background-image: url("../../static/images/bg1@2x.png");
+}
+#ylphone{
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.3);
+}
+.callphone{
+  background: white;
+  width: 75%;
+  height: 168px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 8px;
+}
+.callphone>h2{
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.callphone>span{
+  text-align: center;
+  display: inherit;
+  height: 57px;
+  line-height: 61px;
+  font-size: 16px;
+}
+.butt{
+  width: 50%;
+  border-radius: 0;
+  line-height: 42px;
+  color: #007affd1;
+  border-color: #ebebeb;
+  border-bottom: none;
+}
+.butt1{
+  border-right: none;
+  border-radius: 0 0 0 8px;
+}
+.butt2{
+  border-radius: 0 0 8px 0;
+}
+.card-back{
+  line-height: 41px;
+}
+.card-txcom{
+  background-image: url("../../static/images/touxiang@2x.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+.card-tx{
+  width: 100px;
+  height: 100px;
+}
+.chose-ys{
+  display: block;
+  margin: auto;
+  color: #f0ad4e;
+  width: 140px;
+  border: 1px solid;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  position: relative;
+  top: 26px;
+}
+.card-ex{
+  display: inline-block;
+  height: 100px;
+  position: relative
+}
+.card-exit{
+  background-image: url("../../static/images/bianji222@2x.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 13px;
+}
+.card-coment{
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+.card-zy{
+  background-image: url("../../static/images/xingming@2x.png");
+}
+.card-number{
+  background-image:url("../../static/images/yuangognbianhao@2x.png")
+}
+.card-compontent{
+  background-image: url("../../static/images/gongsi@2x.png");
+}
+.zxname{
+  background-image: url("../../static/images/xingming@2x.png");
+  background-size: 14px;
+  padding-left: 23px;
+}
+.card-phone{
+  background-image: url("../../static/images/tel@2x.png");
+}
+.card-city{
+  background-image: url("../../static/images/dizhi@2x.png");
+}
+.card-js{
+  background-image: url("../../static/images/gerenjianjie@2x.png");
+}
+.self{
+  background-image: url("../../static/images/gerenjianjie@2x.png");
+  background-size: 14px;
+  padding-left: 23px;
+}
+.card3-number{
+  background-image:url("../../static/images/yuangognbianhao@2x.png") ;
+
+}
+.card3-compontent{
+  background-image: url("../../static/images/gongsi@2x.png");
+}
+.card3-phone{
+  background-image: url("../../static/images/tel@2x.png");
+}
+.card3-city{
+  background-image: url("../../static/images/dizhi@2x.png");
+}
+.card3-js{
+  background-image: url("../../static/images/gerenjianjie@2x.png");
+
+}
+.card-name{
+  padding-left: 14px;
+  color: #eae8e8;
+  font-size: 16px;
+}
+.card-content{
+  padding-left: 7px;
+  margin-bottom: 36px;
+}
+.card-title{
+  margin-bottom: 14px;
+  padding-top: 10px;
+}
+.card-jt{
+  background-image: url("../../static/images/right.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 22px;
+}
+.chose-ys>span{
+  position: absolute;
+  left: 26px;
+}
+a{
+  color: white;
+}
+.card-name  a:link,
+.card-name a:visited {
+  color:#FF0000 !important;
+  text-decoration:none;
+}
+.card-name  a:hover,
+.card-name a:active {
+  color:#f0ad4e !important;
+}
+.card-chose{
+  position: fixed;
+  bottom: 0px;
+  /*height: 100%;*/
+  min-height: 330px;
+  width: 100%;
+  background: white;
+}
+#cardchose{
+  display: none;
+}
+.card2-title{
+  width: 149px;
+  margin: auto;
+  margin-top: 39px;
+  padding-left: 25px;
+
+}
+.card2-name{
+  margin: auto;
+  text-align: center;
+}
+.card2-xm{
+  color: rgb(31, 156, 128);
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+
+}
+.card2-zy{
+  color: rgb(31, 156, 128);
+  padding-top: 2px;
+
+}
+.card2-number{
+  display: flex;
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 83px;
+}
+.card2-city{
+  display: flex;
+  float: right;
+  width: 50%;
+  text-align: center;
+  height: 83px;
+  border-left: 1px solid whitesmoke;
+}
+.card2-num{
+  align-self: center;
+  margin: auto;
+
+}
+.card2-name2{
+  padding:0;
+}
+.cardtwo{
+  height: 33px;
+  margin-top: 10px;
+}
+.cardtwo4{
+  height: 22px !important;
+  margin-top: 6px;
+}
+.card2-pop{
+  font-size: 16px;
+  width: 72%;
+  margin: auto
+}
+#yd1{
+  display: block;
+}#yd2{
+   display: none;
+ }
+.choseor{
+  width: 42%;
+  margin-top: 15px;
+}
+.chose-one{
+  background-image: url("../../static/images/bg1@1x.png");
+  background-attachment: inherit;
+}
+.chose-two{
+  background-image: url("../../static/images/bg2@2x.png");
+  background-attachment: inherit;
+}
+#chose1{
+  margin-left: 5%;
+  float: left;
+}
+#chose2{
+  float: right;
+  margin-right: 5%;
+}
+.cd-button{
+  width: 50%;
+  border-radius: 0px;
+  border-bottom: 0px;
+  height: 50px;
+  color: #007aff;
+  border-right: 0px;
+}
+.cd-bottom{
+  clear: both;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.cd-button1{
+  border-left: 0px;
+}
+.card3-tx{
+  width: 39px;
+  height: 45px;
+}
+.choseor-one{
+  padding-left: 8%;
+}
+.card3-ex{
+  display: inline-block;
+  height: 50px;
+  position: relative
+}
+.card3-exit{
+  background-image: url("../../static/images/bianji222@2x.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 4px;
+}
+.card3-coment{
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.card3-zy{
+  background-image: url("../../static/images/xingming@2x.png");
+}
+.card3-name{
+  color: #eae8e8;
+  font-size: 1px;
+}
+.card4-title{
+  width: 46px;
+  margin: auto;
+  margin-top: 21px;
+}
+.card4-tx{
+  width: 39px;
+  height: 39px;
+  background-image: url("../../static/images/touxiang@2x.png");
+}
+.card4-ex{
+  display: inline-block;
+  height: 41px;
+  position: relative
+}
+.card4-exit{
+  background-image: url("../../static/images/bianji222@2x.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 3px;
+}
+.card4-xm{
+  color: rgb(31, 156, 128);
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  padding-top: 2px;
+
+}
+.card4-gw{
+  font-size: 1px;
+}
+.card4-number{
+  display: flex;
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 50px;
+}
+.card4-city{
+  display: flex;
+  float: right;
+  width: 50%;
+  text-align: center;
+  height: 50px;
+  border-left: 1px solid whitesmoke;
+}
+.card4-pop{
+  font-size: 1px;
+  width: 72%;
+  margin: auto
+}
+.card4-num{
+  margin: auto;
+}
+.zx-compontent{
+  background-image: url("../../static/images/gongsi@2x.png");
+}
